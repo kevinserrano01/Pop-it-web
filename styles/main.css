@@ -1,0 +1,138 @@
+body {
+    margin: 0px 120px 0px 120px;
+    padding: 0;
+}
+
+/* Section 1 */
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Dos filas, la primera autoajustable y la segunda con el resto del espacio disponible */
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    height: 800px; /* Altura fija para el contenedor */
+    background-image: url('../images/background.png');
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+
+.nav-bar {
+    grid-row: 1;
+    grid-column: 1 / span 2; /* La barra de navegación abarca dos columnas */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    padding: 10px;
+}
+
+.nav-title {
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.content {
+    grid-row: 2;
+    grid-column: 1; /* La primera columna para el contenido */
+    padding: 20px;
+}
+
+.content-title {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.content-paragraph {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.content-button {
+    margin-top: 10px;
+}
+
+.empty-box {
+    grid-row: 2;
+    grid-column: 2; /* La segunda columna para el cuadro vacío */
+    /* border: 1px solid #ccc; */
+}
+
+/* Section 2 */
+.section2 {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 50px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section2-paragraph {
+    font-size: 16px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* Section 3 */
+.section3-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgb(204, 255, 238);
+    padding: 50px 0px 0px 0px;
+    margin: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto; /* Dos filas */
+    grid-template-columns: repeat(3, 1fr); /* Tres  columna */
+    background-color: rgb(204, 255, 238);
+    justify-items: center;
+}
+
+
+.grid-item {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Tres filas */
+    grid-template-columns: 1fr; /* Una columna */
+    text-align: center;
+    padding: 10px;
+    justify-items: center;
+}
+
+.grid-image {
+    width: 200px;
+}
+
+.grid-description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.grid-button {
+    background-color: rgb(255, 211, 141);
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    width: 100px;
+}
