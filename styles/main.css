@@ -57,18 +57,25 @@ body {
 }
 
 .content-button {
-    margin-top: 10px;
+    background-color: rgb(156, 226, 221);
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    width: 110px;
+    border-radius: 20px;
 }
 
 .empty-box {
     grid-row: 2;
     grid-column: 2; /* La segunda columna para el cuadro vacío */
-    /* border: 1px solid #ccc; */
 }
 
 /* Section 2 */
 .section2 {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     text-align: center;
     padding: 50px;
     height: 200px;
@@ -94,17 +101,18 @@ body {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    background-color: rgb(204, 255, 238);
-    padding: 50px 0px 0px 0px;
+    background-color: rgb(212, 255, 241);
+    padding: 50px 0px 20px 0px;
     margin: 0px;
 }
 
-.grid-container {
+.section3-container {
     display: grid;
     grid-template-rows: auto auto; /* Dos filas */
     grid-template-columns: repeat(3, 1fr); /* Tres  columna */
-    background-color: rgb(204, 255, 238);
+    background-color: rgb(212, 255, 241);
     justify-items: center;
+    padding-bottom: 60px;
 }
 
 
@@ -124,6 +132,7 @@ body {
 .grid-description {
     font-size: 16px;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .grid-button {
@@ -135,4 +144,56 @@ body {
     padding: 15px;
     cursor: pointer;
     width: 100px;
+    border-radius: 20px;
+}
+/* Section 4 */
+.section4 {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Dos filas, la primera autoajustable y la segunda con el resto del espacio disponible */
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    height: 700px; /* Altura fija para el contenedor */
+    background-image: url('../images/bg-grid.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    justify-items: center;
+    align-items: center;
+}
+
+.content4 {
+    grid-row: 2;
+    grid-column: 1; /* La primera columna para el contenido */
+    padding: 20px;
+}
+
+.content4-title {
+    font-size: 50px;
+    color: #000000;
+    padding-left: 50px;
+}
+
+.content4-paragraph {
+    margin-top: 20px;
+    color: #000000;
+    padding-left: 50px;
+}
+
+.empty-box4 {
+    grid-row: 2;
+    grid-column: 2; /* La segunda columna para el cuadro vacío */
+}
+
+.img-section4{
+    width: 500px;
+}
+
+/* Footer */
+#footer {
+    background-color: rgb(52, 52, 52);
+    display: flex;
+
+}
+
+.footer-links {
+    text-decoration: none;
+    color: #d7d7d7;
 }
